@@ -1,24 +1,56 @@
-# README
+# Leonardo Events
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-Things you may want to cover:
 
-* Ruby version
+## Índice
 
-* System dependencies
+- [Pré requisitos](#pré-requisitos)
+- [Primeiros passos](#primeiros-passos)
+- [Como contribuir](#como-contribuir)
+- [Autores](#autores)
+- [Licença](#licensa)
 
-* Configuration
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+### Pré requisitos
 
-* Services (job queues, cache servers, search engines, etc.)
+É preciso ter instalado em sua máquina:
 
-* Deployment instructions
+- Docker
+- Docker Compose
 
-* ...
+
+
+## Primeiros passos
+
+Siga as seguintes instruções para ter uma cópia deste projeto e conseguir executá-lo localmente.
+
+Depois de copiar o repositório para sua máquina, acesse o diretório raiz do projeto e:
+
+1.  Construa o container
+
+```
+docker-compose build
+```
+
+2.  Instale as dependências
+
+```
+docker-compose run --rm app bundle 
+```
+
+
+
+2.  Crie o banco de dados e execute as migrations
+
+```
+docker-compose run --rm app bundle exec rails db:create db:migrate
+```
+
+3.  Suba o projeto
+
+```
+docker-compose up
+```
