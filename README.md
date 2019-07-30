@@ -7,9 +7,7 @@
 
 - [Pré requisitos](#pré-requisitos)
 - [Primeiros passos](#primeiros-passos)
-- [Como contribuir](#como-contribuir)
-- [Autores](#autores)
-- [Licença](#licensa)
+- [Testes](#testes)
 
 
 
@@ -54,3 +52,14 @@ docker-compose run --rm app bundle exec rails db:create db:migrate
 ```
 docker-compose up
 ```
+
+
+# Testes
+
+1. Para rodar os testes utilizando o rspec execute o seguinte comando
+
+   ```
+   docker-compose run --rm app bundle exec rspec
+   ```
+
+2. Para testar a aplicação utilizando o postman, faça a importação desta [collection](leonardo-events.json) 
